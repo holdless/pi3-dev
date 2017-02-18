@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=mjpg_streamer
+Exec=lxterminal -e "/home/pi/Desktop/run_mjpg_streamer.sh"
+Type=Application

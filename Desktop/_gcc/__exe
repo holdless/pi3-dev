@@ -1,0 +1,23 @@
+=============================
+_c_embedding_py_pure.exe
+=============================
+./_c_embedding_py_pure tts_google call "http://translate.google.com/translate_tts?tl=en&client=tw-ob&q=i am tango"
+
+
+=============================
+preparePhoto.exe
+=============================
+./preparePhoto 0.3 92 112 pgm 800 1
+
+-0.3 	means: 30% = I take 30% more than the distance eye-eye.
+-92 	means: my output picture will be col:92 pixels
+-112 	means: my output picture will be row:112 pixels
+-pgm 	means: my ouput picture will be in the format .pgm
+-800 	means: original input pictures will be resized to 800 pixels width (ok for RPI performance)
+-1 	means: do the color histogram equalization (0 = don’t)
+
+#=============================
+# DisplayImage
+#=============================
+#/home/pi/Desktop/tango/facerec/facedet
+./DisplayImage "/home/pi/Desktop/tango/facerec/facedet/myFace.jpg"

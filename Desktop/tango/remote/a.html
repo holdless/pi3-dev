@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+	<LINK REL='SHORTCUT ICON' HREF='tango.ico'>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<style>
+	    canvas 
+	    {
+		border:1px solid #d3d3d3;
+		background-color: #f1f1f1;
+	    }
+	</style>
+    </head>
+
+    <body>
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+	    var socket = io.connect();
+			
+	    socket.on('foo', function(data) {
+		alert(data.name);
+	    });
+			
+	    socket.on('cmd-dir-confirmed', function(data) {	
+		if (data.cmd == "stop_x")
+		    restore_font_color_x("black");
+		else if (data.cmd == "stop_y")
+		    restore_font_color_y("black");
+		else
+		    change_font_color(data.cmd);
+	    });
+            
+	    socket.emit('baz');
+	</script>
+    </body>    
+	
+    <body onload="startGame()">
+
+        
+ 	<h2> from pi-cam</h2>
+	<img src="http://192.168.1.110:8080/?action=stream" alt="picam-Quality=10" style="width:320px;height:240;">
+
+ 	<!--h3>image from local</h3>
+	<img src="cdsem.jpg" alt="CD-SEM" style="width:304px;height:228px;"-->
+
+
+	<script>
+	    var myGamePiece;
+	    function startGame() 
+	    {
+		myGamePiece = new component(30, 30, "smiley.gif", 10, 120, "image");
+		myGameArea.start();
+	    }
+	    var myGameArea = 
+	    {
+		canvas : document.createElement("canvas"),
+		start : function() {
+		    this.canvas.width = 480;
+		    this.canvas.height = 270;
+		    this.context = this.canvas.getContext("2d");
+		    document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+		    this.frameNo = 0;
+		    this.interval = setInterval(updateGameArea, 20);
+		},
+		clear : function() {
+		    this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+		},
+		stop : function() {
+		    clearInterval(this.interval);
+		}
+	    }
+			
+	    function component(width, height, color, x, y, type) 
+	    {
+		this.type = type;
+		if (type == "image") 
+		{
+		    this.image = new Image();
+		    this.image.src = color;
+		}
+		this.width = width;
+		this.height = height;
+		this.speedX = 0;
+		this.speedY = 0;    
+		this.x = x;
+		this.y = y;    
+		this.update = function() {
+		    ctx = myGameArea.context;
+		    if (type == "image") 
+		    {
+			ctx.drawImage(
+			    this.image, 
+			    this.x, 
+			    this.y,
+			    this.width, this.height
+			);
+		    } 
+		    else 
+		    {
+			ctx.fillStyle = color;
+			ctx.fillRect(this.x, this.y, this.width, this.height);
+		    }
+		}
+		this.newPos = function() {
+		    this.x += this.speedX;
+		    this.y += this.speedY;        
+		}
+	    }
+			
+	    function updateGameArea() 
+	    {
+		myGameArea.clear();
+		myGamePiece.newPos();
+		myGamePiece.update();
+	    }
+			
+	    /// keyboard action
+	    // 646.6.1112 hiroshi: add another 4 sub-direction
+	    var map = {};
+	    document.onkeydown = function(evt) {
+		evt = evt || window.event;
+		map[evt.keyCode] = evt.type == 'keydown';
+		if (map[37] && map[38])
+		    moveUL();
+		else if (map[39] && map[38])
+		    moveUR();
+		else if (map[37] && map[40])
+		    moveDL();
+		else if (map[39] && map[40])
+		    moveDR();
+		else if (map[37])
+		    moveleft();
+		else if (map[38])
+		    moveup();
+		else if (map[39])
+		    moveright();
+		else if (map[40])
+		    movedown();
+		else 
+		{
+		    move_stop_x();
+		    move_stop_y();
+		}
+/*		    
+		switch (evt.keyCode) 
+		{
+		    case 37:
+			moveleft();
+			break;
+		    case 38:
+			moveup();
+			break;
+		    case 39:
+			moveright();
+			break;
+		    case 40:
+			movedown();
+			break;
+		}*/
+	    };
+			
+	    document.onkeyup = function(evt) {
+		evt = evt || window.event;
+		map[evt.keyCode] = evt.type == 'keydown';
+		
+		if (evt.keyCode == 37 || evt.keyCode == 39)
+		{
+		    move_stop_x();
+		    if (map[38])
+			moveup();
+		    else if (map[40])
+			movedown();
+		}
+		if (evt.keyCode == 38 || evt.keyCode == 40)
+		{
+		    move_stop_y();
+		    if (map[37])
+			moveleft();
+		    else if (map[39])
+			moveright();
+		}
+	    };
+			
+	    /// button action. up:"y is negative!!"
+	    function moveUL() 
+	    {
+		myGamePiece.speedY = -1; 
+		myGamePiece.speedX = -1; 
+		socket.emit('cmd-dir', {cmd: 'UL'});
+	    }
+	    function moveUR() 
+	    {
+		myGamePiece.speedY = -1; 
+		myGamePiece.speedX = 1; 
+		socket.emit('cmd-dir', {cmd: 'UR'});
+	    }
+	    function moveDL() 
+	    {
+		myGamePiece.speedY = 1; 
+		myGamePiece.speedX = -1; 
+		socket.emit('cmd-dir', {cmd: 'DL'});
+	    }
+	    function moveDR() 
+	    {
+		myGamePiece.speedY = 1; 
+		myGamePiece.speedX = 1; 
+		socket.emit('cmd-dir', {cmd: 'DR'});
+	    }
+	    function moveup() 
+	    {
+		myGamePiece.speedY = -1; 
+		socket.emit('cmd-dir', {cmd: 'up'});
+	    }
+	    function movedown() 
+	    {
+		myGamePiece.speedY = 1; 
+		socket.emit('cmd-dir', {cmd: 'down'});
+	    }
+	    function moveleft() 
+	    {
+		myGamePiece.speedX = -1; 
+		socket.emit('cmd-dir', {cmd: 'left'});
+	    }
+	    function moveright() 
+	    {
+		myGamePiece.speedX = 1; 
+		socket.emit('cmd-dir', {cmd: 'right'});
+	    }
+	    function move_stop_x() 
+	    {
+		myGamePiece.speedX = 0; 
+		socket.emit('cmd-dir', {cmd: 'stop_x'});
+	    }
+	    function move_stop_y() 
+	    {
+		myGamePiece.speedY = 0; 
+		socket.emit('cmd-dir', {cmd: 'stop_y'});
+	    }
+	    function clearmove() 
+	    {
+		myGamePiece.speedX = 0; 
+		myGamePiece.speedY = 0; 
+		var x = document.getElementById("up").formaction;
+		x.value = "myCmd.stop";
+		document.getElementById("myForm").submit();
+	    }
+	    function change_font_color(sDir) 
+	    {
+		if (sDir == "UL")
+		{
+		    var key1 = document.getElementById("up");
+		    var key2 = document.getElementById("left");
+		    key1.style.color = "red"; 
+		    key2.style.color = "red"; 
+		}
+		else if (sDir == "UR")
+		{
+		    var key1 = document.getElementById("up");
+		    var key2 = document.getElementById("right");
+		    key1.style.color = "red"; 
+		    key2.style.color = "red"; 
+		}
+		else if (sDir == "DL")
+		{
+		    var key1 = document.getElementById("down");
+		    var key2 = document.getElementById("left");
+		    key1.style.color = "red"; 
+		    key2.style.color = "red"; 
+		}
+		else if (sDir == "DR")
+		{
+		    var key1 = document.getElementById("down");
+		    var key2 = document.getElementById("right");
+		    key1.style.color = "red"; 
+		    key2.style.color = "red"; 
+		}
+		else
+		{
+		    var x = document.getElementById(sDir);
+//			x.style.fontSize = "25px";           
+		    x.style.color = "red"; 
+		}
+	    }
+	    // 643.1.1017 1112: revise to x/y different restore
+	    function restore_font_color_x(defaultColor) 
+	    {
+		var x = [
+		    document.getElementById("left"),
+		    document.getElementById("right")
+		];
+		for (i = 0; i < 2; i++)
+		    x[i].style.color = defaultColor; 
+	    }
+	    function restore_font_color_y(defaultColor) 
+	    {
+		var x = [
+		    document.getElementById("up"),
+		    document.getElementById("down")
+		];
+		for (i = 0; i < 2; i++)
+		    x[i].style.color = defaultColor; 
+	    }
+			
+	    // 628.1.0704
+	    function passwdWindow() 
+	    {
+		window.open("b.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
+	    }
+	</script>
+			
+	<div style="text-align:center;width:480px;">
+	    <button id="up" onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">UP</button><br><br>
+	    <button id="left" onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">LEFT</button>
+	    <button id="right" onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">RIGHT</button><br><br>
+	    <button id="down" onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">DOWN</button>
+	</div>
+		
+	<!-- ------------------------------------------------------------------------ -->
+	<!-- this block is about how to get update info from server, very important!! -->
+	<!-- ------------------------------------------------------------------------ -->
+	<h1>Getting server updates</h1>
+	<!-- show time -->
+	<div class="relative margin" id="result"></div><br><br>
+	<!-- show comannd dir <int> -->
+	<div id="showDir"></div>
+
+	<script type="text/javascript">
+	    if(typeof(EventSource) !== "undefined") 
+	    {
+		var source = new EventSource("srvSent"); // "srvSent" first defined here!!
+		source.addEventListener(
+		    "cmdUp", 
+		    function(event) {
+			document.getElementById("showDir").innerHTML=event.data;
+		    },
+		    false
+		);
+		source.addEventListener(
+		    'message', 
+		    function(event) {
+			document.getElementById('result').innerHTML=event.data + "<br>";
+		    },
+		    false
+		);
+//    source.onmessage = function(event) {
+//        document.getElementById("result").innerHTML = event.data + "<br>";
+//    };
+	    } 
+	    else 
+	    {
+		document.getElementById("result").innerHTML = "Sorry, your browser does not support server-sent events...";
+	    }
+	</script>
+		
+	<!------------------------->
+	<!-- server-sent end here-->
+	<!------------------------->
+	<style>
+	    h1 
+	    {
+		color:green
+	    }
+	    div.relative 
+	    {
+		position: relative;
+		left: 30px;
+		top: 20px;
+		border: 3px solid #73AD21;
+	    }
+	    div.margin 
+	    {
+		margin-top: 0px;
+		margin-bottom: 0px;
+		margin-right: 900px;
+		margin-left: 0px;
+	    }
+	</style>
+		<!-- <p>The component constructor uses the built-in image object to draw images onto the canvas.</p> -->
+    </body>
+</html>

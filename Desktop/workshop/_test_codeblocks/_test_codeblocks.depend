@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1482583555 source:/home/pi/Desktop/_test_codeblocks/main.cpp
+	<string>
+	<iostream>
+	<thread>
+	<unistd.h>
+
+1482583555 source:/home/pi/Desktop/arena/_test_codeblocks/main.cpp
+	<string>
+	<iostream>
+	<thread>
+	<unistd.h>
+

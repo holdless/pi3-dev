@@ -1,0 +1,3 @@
+/home/pi/Desktop/workshop/_opencv3.1.0_cmake/CMakeFiles/edit_cache.dir
+/home/pi/Desktop/workshop/_opencv3.1.0_cmake/CMakeFiles/rebuild_cache.dir
+/home/pi/Desktop/workshop/_opencv3.1.0_cmake/CMakeFiles/DisplayImage.dir

@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="mjpg-streamer" />
+		<Option makefile_is_custom="1" />
+		<Option execution_dir="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="CMake Files/;CMake Files/cmake/;CMake Files/../;CMake Files/../../;CMake Files/../../../;CMake Files/../../../../;CMake Files/../../../../../;CMake Files/../../../../../../;CMake Files/../../../../../../usr/;CMake Files/../../../../../../usr/share/;CMake Files/../../../../../../usr/share/OpenCV/;CMake Files/plugins/;CMake Files/plugins/input_file/;CMake Files/plugins/input_http/;CMake Files/plugins/input_raspicam/;CMake Files/plugins/input_ptp2/;CMake Files/plugins/input_uvc/;CMake Files/plugins/output_file/;CMake Files/plugins/output_http/;CMake Files/plugins/output_rtsp/;CMake Files/plugins/output_udp/;CMake Files/plugins/output_viewer/;" />
+		<Build>
+			<Target title="all">
+				<Option output="../mjpg_streamer" prefix_auto="0" extension_auto="0" />
+				<Option working_dir=".." />
+				<Option object_output="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/.objs" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Option parameters='-o &quot;output_http.so -w ./www&quot; -i &quot;input_raspicam.so -x 320 -y 240 -quality 60&quot;' />
+				<MakeCommands>
+					<Build command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 all' />
+					<CompileFile command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option type="4" />
+				<Option compiler="gcc" />
+				<MakeCommands>
+					<Build command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 edit_cache' />
+					<CompileFile command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option type="4" />
+				<Option compiler="gcc" />
+				<MakeCommands>
+					<Build command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 install' />
+					<CompileFile command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option type="4" />
+				<Option compiler="gcc" />
+				<MakeCommands>
+					<Build command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 install/local' />
+					<CompileFile command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option type="4" />
+				<Option compiler="gcc" />
+				<MakeCommands>
+					<Build command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 install/strip' />
+					<CompileFile command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option type="4" />
+				<Option compiler="gcc" />
+				<MakeCommands>
+					<Build command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 list_install_components' />
+					<CompileFile command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="mjpg_streamer">
+				<Option output="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/mjpg_streamer" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build" />
+				<Option object_output="./" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add directory="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/image_proc" />
+					<Add directory="/usr/include" />
+					<Add directory="/usr/include/arm-linux-gnueabihf" />
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/4.9/." />
+					<Add directory="/usr/include/c++/4.9" />
+					<Add directory="/usr/include/c++/4.9/backward" />
+					<Add directory="/usr/include/opencv" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed" />
+					<Add directory="/usr/local/include" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 mjpg_streamer' />
+					<CompileFile command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="mjpg_streamer/fast">
+				<Option output="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/mjpg_streamer" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build" />
+				<Option object_output="./" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add directory="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/image_proc" />
+					<Add directory="/usr/include" />
+					<Add directory="/usr/include/arm-linux-gnueabihf" />
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/4.9/." />
+					<Add directory="/usr/include/c++/4.9" />
+					<Add directory="/usr/include/c++/4.9/backward" />
+					<Add directory="/usr/include/opencv" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed" />
+					<Add directory="/usr/local/include" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 mjpg_streamer/fast' />
+					<CompileFile command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option type="4" />
+				<Option compiler="gcc" />
+				<MakeCommands>
+					<Build command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 rebuild_cache' />
+					<CompileFile command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="input_file">
+				<Option output="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_file/input_file.so" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_file" />
+				<Option object_output="./" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add directory="/usr/include" />
+					<Add directory="/usr/include/arm-linux-gnueabihf" />
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/4.9/." />
+					<Add directory="/usr/include/c++/4.9" />
+					<Add directory="/usr/include/c++/4.9/backward" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed" />
+					<Add directory="/usr/local/include" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_file/Makefile&quot;  VERBOSE=1 input_file' />
+					<CompileFile command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_file/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_file/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_file/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="input_file/fast">
+				<Option output="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_file/input_file.so" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_file" />
+				<Option object_output="./" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add directory="/usr/include" />
+					<Add directory="/usr/include/arm-linux-gnueabihf" />
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/4.9/." />
+					<Add directory="/usr/include/c++/4.9" />
+					<Add directory="/usr/include/c++/4.9/backward" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed" />
+					<Add directory="/usr/local/include" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_file/Makefile&quot;  VERBOSE=1 input_file/fast' />
+					<CompileFile command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_file/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_file/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_file/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="input_http">
+				<Option output="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_http/input_http.so" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_http" />
+				<Option object_output="./" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add directory="/usr/include" />
+					<Add directory="/usr/include/arm-linux-gnueabihf" />
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/4.9/." />
+					<Add directory="/usr/include/c++/4.9" />
+					<Add directory="/usr/include/c++/4.9/backward" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed" />
+					<Add directory="/usr/local/include" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_http/Makefile&quot;  VERBOSE=1 input_http' />
+					<CompileFile command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_http/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_http/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_http/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="input_http/fast">
+				<Option output="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_http/input_http.so" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_http" />
+				<Option object_output="./" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add directory="/usr/include" />
+					<Add directory="/usr/include/arm-linux-gnueabihf" />
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/4.9/." />
+					<Add directory="/usr/include/c++/4.9" />
+					<Add directory="/usr/include/c++/4.9/backward" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed" />
+					<Add directory="/usr/local/include" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_http/Makefile&quot;  VERBOSE=1 input_http/fast' />
+					<CompileFile command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_http/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_http/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_http/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="input_raspicam">
+				<Option output="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_raspicam/input_raspicam.so" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_raspicam" />
+				<Option object_output="./" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add directory="/opt/vc/include" />
+					<Add directory="/opt/vc/include/interface/vcos" />
+					<Add directory="/opt/vc/include/interface/vcos/pthreads" />
+					<Add directory="/opt/vc/include/interface/vmcs_host" />
+					<Add directory="/opt/vc/include/interface/vmcs_host/linux" />
+					<Add directory="/usr/include" />
+					<Add directory="/usr/include/arm-linux-gnueabihf" />
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/4.9/." />
+					<Add directory="/usr/include/c++/4.9" />
+					<Add directory="/usr/include/c++/4.9/backward" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed" />
+					<Add directory="/usr/local/include" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_raspicam/Makefile&quot;  VERBOSE=1 input_raspicam' />
+					<CompileFile command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_raspicam/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_raspicam/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_raspicam/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="input_raspicam/fast">
+				<Option output="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_raspicam/input_raspicam.so" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_raspicam" />
+				<Option object_output="./" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add directory="/opt/vc/include" />
+					<Add directory="/opt/vc/include/interface/vcos" />
+					<Add directory="/opt/vc/include/interface/vcos/pthreads" />
+					<Add directory="/opt/vc/include/interface/vmcs_host" />
+					<Add directory="/opt/vc/include/interface/vmcs_host/linux" />
+					<Add directory="/usr/include" />
+					<Add directory="/usr/include/arm-linux-gnueabihf" />
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/4.9/." />
+					<Add directory="/usr/include/c++/4.9" />
+					<Add directory="/usr/include/c++/4.9/backward" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed" />
+					<Add directory="/usr/local/include" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_raspicam/Makefile&quot;  VERBOSE=1 input_raspicam/fast' />
+					<CompileFile command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_raspicam/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_raspicam/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_raspicam/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="input_uvc">
+				<Option output="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_uvc/input_uvc.so" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_uvc" />
+				<Option object_output="./" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DLINUX" />
+					<Add option="-D_GNU_SOURCE" />
+					<Add option="-DUSE_LIBV4L2" />
+					<Add directory="/usr/include" />
+					<Add directory="/usr/include/arm-linux-gnueabihf" />
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/4.9/." />
+					<Add directory="/usr/include/c++/4.9" />
+					<Add directory="/usr/include/c++/4.9/backward" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed" />
+					<Add directory="/usr/local/include" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_uvc/Makefile&quot;  VERBOSE=1 input_uvc' />
+					<CompileFile command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_uvc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_uvc/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_uvc/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="input_uvc/fast">
+				<Option output="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_uvc/input_uvc.so" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_uvc" />
+				<Option object_output="./" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DLINUX" />
+					<Add option="-D_GNU_SOURCE" />
+					<Add option="-DUSE_LIBV4L2" />
+					<Add directory="/usr/include" />
+					<Add directory="/usr/include/arm-linux-gnueabihf" />
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/4.9/." />
+					<Add directory="/usr/include/c++/4.9" />
+					<Add directory="/usr/include/c++/4.9/backward" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed" />
+					<Add directory="/usr/local/include" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_uvc/Makefile&quot;  VERBOSE=1 input_uvc/fast' />
+					<CompileFile command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_uvc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_uvc/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/input_uvc/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="output_file">
+				<Option output="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_file/output_file.so" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_file" />
+				<Option object_output="./" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add directory="/usr/include" />
+					<Add directory="/usr/include/arm-linux-gnueabihf" />
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/4.9/." />
+					<Add directory="/usr/include/c++/4.9" />
+					<Add directory="/usr/include/c++/4.9/backward" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed" />
+					<Add directory="/usr/local/include" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_file/Makefile&quot;  VERBOSE=1 output_file' />
+					<CompileFile command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_file/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_file/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_file/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="output_file/fast">
+				<Option output="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_file/output_file.so" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_file" />
+				<Option object_output="./" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add directory="/usr/include" />
+					<Add directory="/usr/include/arm-linux-gnueabihf" />
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/4.9/." />
+					<Add directory="/usr/include/c++/4.9" />
+					<Add directory="/usr/include/c++/4.9/backward" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed" />
+					<Add directory="/usr/local/include" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_file/Makefile&quot;  VERBOSE=1 output_file/fast' />
+					<CompileFile command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_file/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_file/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_file/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="output_http">
+				<Option output="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_http/output_http.so" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_http" />
+				<Option object_output="./" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-D_GNU_SOURCE" />
+					<Add directory="/usr/include" />
+					<Add directory="/usr/include/arm-linux-gnueabihf" />
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/4.9/." />
+					<Add directory="/usr/include/c++/4.9" />
+					<Add directory="/usr/include/c++/4.9/backward" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed" />
+					<Add directory="/usr/local/include" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_http/Makefile&quot;  VERBOSE=1 output_http' />
+					<CompileFile command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_http/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_http/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_http/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="output_http/fast">
+				<Option output="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_http/output_http.so" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_http" />
+				<Option object_output="./" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-D_GNU_SOURCE" />
+					<Add directory="/usr/include" />
+					<Add directory="/usr/include/arm-linux-gnueabihf" />
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/4.9/." />
+					<Add directory="/usr/include/c++/4.9" />
+					<Add directory="/usr/include/c++/4.9/backward" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed" />
+					<Add directory="/usr/local/include" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_http/Makefile&quot;  VERBOSE=1 output_http/fast' />
+					<CompileFile command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_http/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_http/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_http/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="output_rtsp">
+				<Option output="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_rtsp/output_rtsp.so" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_rtsp" />
+				<Option object_output="./" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add directory="/usr/include" />
+					<Add directory="/usr/include/arm-linux-gnueabihf" />
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/4.9/." />
+					<Add directory="/usr/include/c++/4.9" />
+					<Add directory="/usr/include/c++/4.9/backward" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed" />
+					<Add directory="/usr/local/include" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_rtsp/Makefile&quot;  VERBOSE=1 output_rtsp' />
+					<CompileFile command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_rtsp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_rtsp/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_rtsp/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="output_rtsp/fast">
+				<Option output="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_rtsp/output_rtsp.so" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_rtsp" />
+				<Option object_output="./" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add directory="/usr/include" />
+					<Add directory="/usr/include/arm-linux-gnueabihf" />
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/4.9/." />
+					<Add directory="/usr/include/c++/4.9" />
+					<Add directory="/usr/include/c++/4.9/backward" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed" />
+					<Add directory="/usr/local/include" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_rtsp/Makefile&quot;  VERBOSE=1 output_rtsp/fast' />
+					<CompileFile command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_rtsp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_rtsp/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_rtsp/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="output_udp">
+				<Option output="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_udp/output_udp.so" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_udp" />
+				<Option object_output="./" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add directory="/usr/include" />
+					<Add directory="/usr/include/arm-linux-gnueabihf" />
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/4.9/." />
+					<Add directory="/usr/include/c++/4.9" />
+					<Add directory="/usr/include/c++/4.9/backward" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed" />
+					<Add directory="/usr/local/include" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_udp/Makefile&quot;  VERBOSE=1 output_udp' />
+					<CompileFile command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_udp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_udp/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_udp/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="output_udp/fast">
+				<Option output="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_udp/output_udp.so" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_udp" />
+				<Option object_output="./" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add directory="/usr/include" />
+					<Add directory="/usr/include/arm-linux-gnueabihf" />
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/4.9/." />
+					<Add directory="/usr/include/c++/4.9" />
+					<Add directory="/usr/include/c++/4.9/backward" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include" />
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed" />
+					<Add directory="/usr/local/include" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_udp/Makefile&quot;  VERBOSE=1 output_udp/fast' />
+					<CompileFile command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_udp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_udp/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='/usr/bin/make -f &quot;/home/pi/Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_build/plugins/output_udp/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="../../../../usr/share/OpenCV/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files/../../../../../../usr/share/OpenCV/" />
+		</Unit>
+		<Unit filename="../../../../usr/share/OpenCV/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files/../../../../../../usr/share/OpenCV/" />
+		</Unit>
+		<Unit filename="../../../../usr/share/OpenCV/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files/../../../../../../usr/share/OpenCV/" />
+		</Unit>
+		<Unit filename="../../../../usr/share/OpenCV/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files/../../../../../../usr/share/OpenCV/" />
+		</Unit>
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/CMakeLists.txt">
+			<Option virtualFolder="CMake Files/" />
+		</Unit>
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_i2c/i2cPiToArduino.h" />
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_imageproc/image_proc.cpp" />
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/_imageproc/image_proc.h" />
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/cmake/FindGphoto2.cmake">
+			<Option virtualFolder="CMake Files/cmake/" />
+		</Unit>
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/cmake/mjpg_streamer_utils.cmake">
+			<Option virtualFolder="CMake Files/cmake/" />
+		</Unit>
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/mjpg_streamer.cpp" />
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/mjpg_streamer.h" />
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/plugins/input_file/CMakeLists.txt">
+			<Option virtualFolder="CMake Files/plugins/input_file/" />
+		</Unit>
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/plugins/input_file/input_file.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/plugins/input_http/CMakeLists.txt">
+			<Option virtualFolder="CMake Files/plugins/input_http/" />
+		</Unit>
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/plugins/input_http/input_http.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/plugins/input_http/misc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/plugins/input_http/misc.h" />
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/plugins/input_http/mjpg-proxy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/plugins/input_http/mjpg-proxy.h" />
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/plugins/input_ptp2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files/plugins/input_ptp2/" />
+		</Unit>
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/plugins/input_raspicam/CMakeLists.txt">
+			<Option virtualFolder="CMake Files/plugins/input_raspicam/" />
+		</Unit>
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/plugins/input_raspicam/input_raspicam.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/plugins/input_uvc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files/plugins/input_uvc/" />
+		</Unit>
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/plugins/input_uvc/dynctrl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/plugins/input_uvc/dynctrl.h" />
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/plugins/input_uvc/input_uvc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/plugins/input_uvc/jpeg_utils.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/plugins/input_uvc/jpeg_utils.h" />
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/plugins/input_uvc/v4l2uvc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/plugins/input_uvc/v4l2uvc.h" />
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/plugins/output_file/CMakeLists.txt">
+			<Option virtualFolder="CMake Files/plugins/output_file/" />
+		</Unit>
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/plugins/output_file/output_file.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/plugins/output_file/output_file.h" />
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/plugins/output_http/CMakeLists.txt">
+			<Option virtualFolder="CMake Files/plugins/output_http/" />
+		</Unit>
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/plugins/output_http/httpd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/plugins/output_http/httpd.h" />
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/plugins/output_http/output_http.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/plugins/output_rtsp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files/plugins/output_rtsp/" />
+		</Unit>
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/plugins/output_rtsp/output_rtsp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/plugins/output_udp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files/plugins/output_udp/" />
+		</Unit>
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/plugins/output_udp/output_udp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/plugins/output_viewer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files/plugins/output_viewer/" />
+		</Unit>
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/utils.cpp" />
+		<Unit filename="../../Downloads/test/mjpg-streamer/mjpg-streamer-experimental/utils.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

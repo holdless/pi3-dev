@@ -1,0 +1,64 @@
+=======================
+basic:
+=======================
+gcc --version
+g++ --version
+
+=======================
+thread:
+=======================
+g++ _thread.cpp -o _thread -std=c++0x -pthread
+
+=======================
+template:
+=======================
+g++ [*.cpp] -o [*] -I/usr/local/include/ -L/opt/vc/lib/ -lraspicam -lraspicam_cv -lmmal -lmmal_core -lmmal_util -lopencv_core -lopencv_highgui
+
+g++ raspicamFaceDetection.cpp -o raspicamFaceDetection -I/usr/local/include/ -L/opt/vc/lib/ -lraspicam -lraspicam_cv -lmmal -lmmal_core -lmmal_util -lopencv_core -lopencv_highgui
+
+=======================
+OpenCV:
+=======================
++++++++++++++++++++++++
+raspicamFaceDetection/opencv:
++++++++++++++++++++++++
+g++ `pkg-config --cflags opencv` -o raspicamFaceDetection raspicamFaceDetection.cpp `pkg-config --libs opencv` -L/opt/vc/lib/ -lraspicam -lraspicam_cv -lmmal -lmmal_core -lmmal_util -lopencv_core -lopencv_highgui
+
++++++++++++++++++++++++
+usbcamFaceDetection/opencv:
++++++++++++++++++++++++
+template:
+g++ `pkg-config --cflags --libs opencv` [*.cpp] -o [*]
+
+usbcamFaceDetection:
+g++ `pkg-config --cflags --libs opencv` usbcamFaceDetection.cpp -o usbcamFaceDetection
+
++++++++++++++++++++++++
+preparePhoto/opencv:
++++++++++++++++++++++++
+g++ `pkg-config --cflags opencv` -o preparePhoto preparePhoto.cpp `pkg-config --libs opencv` -L/opt/vc/lib/ -lraspicam -lraspicam_cv -lmmal -lmmal_core -lmmal_util -lopencv_core -lopencv_highgui
+
++++++++++++++++++++++++
+eigenFacerec/opencv:
++++++++++++++++++++++++
+g++ `pkg-config --cflags opencv` -o eigenFacerec eigenFacerec.cpp `pkg-config --libs opencv` -L/opt/vc/lib/ -lraspicam -lraspicam_cv -lmmal -lmmal_core -lmmal_util -lopencv_core -lopencv_highgui
+
++++++++++++++++++++++++
+videoFacerec/opencv:
++++++++++++++++++++++++
+g++ `pkg-config --cflags opencv` -o videoFacerec videoFacerec.cpp `pkg-config --libs opencv` -L/opt/vc/lib/ -lraspicam -lraspicam_cv -lmmal -lmmal_core -lmmal_util -lopencv_core -lopencv_highgui
+
+=======================
+C++  embedding python script:
+=======================
++++++++++++++++++++++++
+test_embedding_py/python2.7/Python.h:
++++++++++++++++++++++++
+g++ _c_embedding_py.cpp -o _c_embedding_py -lpython2.7
+g++ _c_embedding_py_pure.cpp -o _c_embedding_py_pure -lpython2.7
+
+=======================
+C++ call java:
+=======================
+g++ -I/usr/lib/jvm/jdk-8-oracle-arm-vfp-hflt/include -I/usr/lib/jvm/jdk-8-oracle-arm-vfp-hflt/include/linux -L/usr/lib/jvm/jdk-8-oracle-arm-vfp-hflt/jre/lib/arm/client -ljvm c_call_java.cpp -o c_call_java
+

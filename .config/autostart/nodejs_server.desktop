@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=nodejs_server
+Exec=lxterminal -e "/home/pi/Desktop/run_nodejs_srv.sh"
+Type=Application
+

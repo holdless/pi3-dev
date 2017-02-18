@@ -1,0 +1,3 @@
+/home/pi/Desktop/workshop/cmake_codeblocks/build/CMakeFiles/edit_cache.dir
+/home/pi/Desktop/workshop/cmake_codeblocks/build/CMakeFiles/rebuild_cache.dir
+/home/pi/Desktop/workshop/cmake_codeblocks/build/CMakeFiles/hello.dir

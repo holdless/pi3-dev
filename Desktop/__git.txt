@@ -1,0 +1,24 @@
+to see what refs do you have:
+git show-ref
+
+check remote github directory:
+git remote -v
+
+push to remote github directory:
+git remote add origin https://github.com/holdless/pi2.git
+git push -u origin master
+
+pull from remote github directory:
+git pull <remote> <branch>
+
+git status
+git add <file> (to include in what will be committed)
+git init
+git commit -m "first commit"
+
+delete git repo created with init:
+rm -rf .git
+
+branch:
+git checkout -b <branch_name>
+git branch <branch name>

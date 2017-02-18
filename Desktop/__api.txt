@@ -1,0 +1,43 @@
+--------------
+*arecord
+--------------
+arecord -D plughw:1 --duration=3 -r 48000 test.wav
+
+--------------
+*espeak
+--------------
+to suppress warning message:
+espeak "hello" 2>/dev/null
+
+system("espeak \"good bye\"");
+
+--------------
+*omxplayer
+--------------
+omxplayer example.mp3
+
+force output over hdmi:
+omxplayer -o hdmi example.mp3
+
+force output over headphone:
+omxplayer -o local example.mp3
+
+--------------
+*speechRecognition
+--------------
+python -m speech_recognition
+
+--------------
+*pocket_sphinx
+--------------
+pocketsphinx_continuous -hmm /usr/local/share/pocketsphinx/model/en-us/en-us -lm /home/pi/Desktop/7717.lm -dict /home/pi/Desktop/7717.dic -samprate 16000/8000/48000 -inmic yes
+
+--------------
+*mjpg-streamer (default port:8080)
+--------------
+cd /usr/src/mjpg-streamer/mjpg-streamer-experimental
+for raspicam:
+./mjpg_streamer -o "output_http.so -w ./www" -i "input_raspicam.so -x 320 -y 240 -quality 60"
+for usb-cam:
+./mjpg_streamer -o "output_http.so -w ./www" -i "input_uvc.so -quality 60"
+

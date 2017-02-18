@@ -1,0 +1,48 @@
+<list storage information:>
+df
+
+<uninstall:>
+sudo apt-get remove [...]
+sudo apt-get remove --auto-remove [...]
+
+<TCP/IP:>
+ifconfig
+
+<check username:>
+whoami
+
+<check directory owner:>
+ls - l /path/directory
+
+<change directory owner:>
+chown -R $(whom) /path/dir...
+
+<chmod:>
+- chmod  +w <directory> or chmod a+w <directory> - Write permission for user, group and others
+- chmod u+w <directory> - Write permission for user
+- chmod g+w <directory> - Write permission for group
+- chmod o+w <directory> - Write permission for others
+
+<"print" working directory:>
+pwd
+
+<Bash: current directory variable:>
+This saves the absolute path of the current working directory to the variable cwd:
+
+cwd=$(pwd)
+
+In your case you can just do:
+
+export PATH=$PATH:$(pwd)+somethingelse
+
+<Change current directory from a script:>
+When you start your script, a new process is created that only inherits your environment. When it ends, it ends. Your current environment stays as it is.
+
+Instead, you can start your script like this:
+
+. myscript.sh
+
+The . will evaluate the script in the current environment, so it might be altered
+
+- 指令檔名的搜尋：which
+- 檔案檔名的搜尋：whereis, locate / updatedb, find
