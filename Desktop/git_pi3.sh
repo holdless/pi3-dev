@@ -8,7 +8,7 @@ sudo git add /boot/config.txt
 sudo git add /etc/dhcpcd.conf
 
 # commit and push to github
-sudo git commit -m "pi2_system"
+sudo git commit -m "pi3_sys"
 sudo git push -u origin master
 
 ###########
@@ -54,8 +54,19 @@ git add /home/pi/Downloads/dlib/examples/face_detection_ex.cpp
 git add /home/pi/Downloads/dlib/examples/fhog_object_detector_ex.cpp
 git add /home/pi/Downloads/dlib/examples/train_object_detector.cpp
 git add /home/pi/Downloads/dlib/examples/video_tracking_ex.cpp
+git add -f /home/pi/Downloads/dlib/examples/build/object_detector.svm
+
+git add /home/pi/Downloads/dlib/tools/imglab/CMakeLists.txt
+git add -f /home/pi/Downloads/dlib/tools/imglab/build/apple_dataset.xml
+
+# CppMT
+git add /home/pi/Downloads/CppMT/CMakeLists.txt
+git add /home/pi/Downloads/CppMT/main.cpp
+git add /home/pi/Downloads/CppMT/CMT.cpp
+git add /home/pi/Downloads/CppMT/CMT.h
+
 
 
 # commit and push to github
-git commit -m "pi2_dev"
+git commit -m "pi3_dev"
 git push -u origin master

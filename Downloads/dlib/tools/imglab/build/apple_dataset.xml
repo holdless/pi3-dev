@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<?xml-stylesheet type='text/xsl' href='image_metadata_stylesheet.xsl'?>
+<dataset>
+<name>imglab dataset</name>
+<comment>Created by imglab tool.</comment>
+<images>
+  <image file='/home/pi/Pictures/apples/training_set/448820990_099a4aa69f_b.jpg.650x0_q70_crop-smart.jpg'>
+    <box top='187' left='30' width='210' height='217'/>
+    <box top='196' left='415' width='193' height='199'/>
+    <box top='74' left='388' width='147' height='137'/>
+    <box top='77' left='246' width='141' height='138'/>
+    <box top='71' left='140' width='121' height='125'/>
+    <box top='57' left='23' width='120' height='140'/>
+  </image>
+  <image file='/home/pi/Pictures/apples/training_set/85_apple_01-750x450.jpg'>
+    <box top='181' left='150' width='258' height='222'/>
+    <box top='190' left='404' width='201' height='196'/>
+    <box top='10' left='492' width='204' height='201'/>
+  </image>
+  <image file='/home/pi/Pictures/apples/training_set/An-apple-a-day-keeps-the-Doctor-away.jpg'>
+    <box top='573' left='153' width='544' height='567'/>
+    <box top='517' left='698' width='695' height='666'/>
+  </image>
+  <image file='/home/pi/Pictures/apples/training_set/Apple-Fruit-3.jpg'>
+    <box top='12' left='140' width='299' height='325'/>
+  </image>
+  <image file='/home/pi/Pictures/apples/training_set/Apple-Fruit-9.jpg'>
+    <box top='20' left='46' width='201' height='226'/>
+  </image>
+  <image file='/home/pi/Pictures/apples/training_set/Apples.jpg'>
+    <box top='73' left='21' width='355' height='348'/>
+  </image>
+  <image file='/home/pi/Pictures/apples/training_set/Can-Dogs-Eat-Apples.jpg'>
+    <box top='141' left='26' width='134' height='132'/>
+    <box top='104' left='330' width='161' height='143'/>
+  </image>
+  <image file='/home/pi/Pictures/apples/training_set/Local Apples.jpg'>
+    <box top='137' left='517' width='574' height='613'/>
+  </image>
+  <image file='/home/pi/Pictures/apples/training_set/Organic-Apples jpg.jpg'>
+    <box top='157' left='83' width='79' height='74'/>
+    <box top='140' left='12' width='69' height='72'/>
+  </image>
+  <image file='/home/pi/Pictures/apples/training_set/Pink_lady_and_cross_section.jpg'>
+    <box top='55' left='40' width='349' height='356'/>
+    <box top='49' left='428' width='365' height='362'/>
+    <box top='60' left='834' width='388' height='351'/>
+  </image>
+  <image file='/home/pi/Pictures/apples/training_set/Red_delicious_apple.jpg'>
+    <box top='60' left='42' width='252' height='248'/>
+  </image>
+  <image file='/home/pi/Pictures/apples/training_set/apple-1560425.jpg'>
+    <box top='35' left='96' width='402' height='390'/>
+  </image>
+  <image file='/home/pi/Pictures/apples/training_set/apples-553.jpg'>
+    <box top='66' left='39' width='149' height='159'/>
+    <box top='65' left='186' width='145' height='159'/>
+    <box top='65' left='330' width='148' height='158'/>
+  </image>
+  <image file='/home/pi/Pictures/apples/training_set/apples.jpg.653x0_q80_crop-smart.jpg'>
+    <box top='118' left='69' width='209' height='198'/>
+    <box top='47' left='249' width='196' height='188'/>
+    <box top='136' left='462' width='175' height='202'/>
+    <box top='221' left='316' width='183' height='158'/>
+  </image>
+  <image file='/home/pi/Pictures/apples/training_set/apples1.jpg'>
+    <box top='452' left='139' width='227' height='227'/>
+    <box top='310' left='314' width='228' height='223'/>
+    <box top='406' left='530' width='210' height='210'/>
+    <box top='242' left='746' width='228' height='228'/>
+    <box top='461' left='814' width='227' height='226'/>
+  </image>
+  <image file='/home/pi/Pictures/apples/training_set/article-2337849-1A35CD8C000005DC-421_634x517.jpg'>
+    <box top='278' left='11' width='242' height='230'/>
+    <box top='122' left='274' width='352' height='380'/>
+  </image>
+  <image file='/home/pi/Pictures/apples/training_set/article-2406221-1B8667F8000005DC-309_634x700.jpg'>
+    <box top='25' left='12' width='621' height='670'/>
+  </image>
+  <image file='/home/pi/Pictures/apples/training_set/fruit_apple_apple-tree_wallpaper_Vol_014_SN002.JPG'>
+    <box top='247' left='65' width='384' height='412'/>
+    <box top='252' left='593' width='379' height='385'/>
+  </image>
+  <image file='/home/pi/Pictures/apples/training_set/granny-smith-apples.jpg'>
+    <box top='312' left='43' width='342' height='356'/>
+    <box top='445' left='290' width='339' height='304'/>
+    <box top='380' left='667' width='341' height='324'/>
+  </image>
+  <image file='/home/pi/Pictures/apples/training_set/green-apple1.jpg'>
+    <box top='20' left='24' width='451' height='446'/>
+  </image>
+  <image file='/home/pi/Pictures/apples/training_set/health-benefits-of-green-apples.jpg'>
+    <box top='22' left='28' width='272' height='307'/>
+    <box top='40' left='247' width='360' height='350'/>
+  </image>
+  <image file='/home/pi/Pictures/apples/training_set/images.jpeg'>
+    <box top='12' left='111' width='155' height='161'/>
+  </image>
+  <image file='/home/pi/Pictures/apples/training_set/okanagan-apples-gmo_1485366182189_2650985_ver1.0.jpg'>
+    <box top='116' left='171' width='288' height='308'/>
+  </image>
+  <image file='/home/pi/Pictures/apples/training_set/picture-of-apples.jpg'>
+    <box top='136' left='34' width='72' height='76'/>
+    <box top='130' left='106' width='69' height='81'/>
+    <box top='140' left='179' width='69' height='71'/>
+    <box top='140' left='250' width='73' height='71'/>
+    <box top='136' left='325' width='73' height='79'/>
+  </image>
+  <image file='/home/pi/Pictures/apples/training_set/robb-debenport-apples.jpg'>
+    <box top='213' left='482' width='297' height='231'/>
+    <box top='124' left='222' width='289' height='227'/>
+    <box top='24' left='472' width='282' height='193'/>
+    <box top='70' left='760' width='199' height='254'/>
+    <box top='436' left='476' width='343' height='203'/>
+    <box top='254' left='0' width='258' height='217'/>
+    <box top='74' left='-1' width='245' height='184'/>
+    <box top='3' left='202' width='266' height='159'/>
+  </image>
+  <image file='/home/pi/Pictures/apples/training_set/shutterstock_106071779_granny-smith-apples.jpg'>
+    <box top='404' left='664' width='494' height='492'/>
+  </image>
+  <image file='/home/pi/Pictures/apples/training_set/xapples_2.jpg,qitok=0F5s2hx0.pagespeed.ic.H3Z5J7VYDS.jpg'>
+    <box top='30' left='216' width='244' height='231'/>
+  </image>
+</images>
+</dataset>

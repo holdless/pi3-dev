@@ -83,6 +83,8 @@
 using namespace std;
 using namespace dlib;
 
+#define _BILLIONTH 1E-9
+
 // ----------------------------------------------------------------------------------------
 
 void pick_best_window_size (
@@ -390,10 +392,18 @@ int main(int argc, char** argv)
         // Test the detector on the images we loaded and display the results
         // in a window.
         image_window win;
+
         for (unsigned long i = 0; i < images.size(); ++i)
         {
             // Run the detector on images[i] 
+            // 2017.2.18 hiroshi: detecting time lapse test
+            struct timespec tt1, tt2;
+            clock_gettime(CLOCK_REALTIME, &tt1);
             const std::vector<rectangle> rects = detector(images[i]);
+            clock_gettime(CLOCK_REALTIME, &tt2);
+   	    double lapse = (tt2.tv_sec -tt1.tv_sec) + (tt2.tv_nsec -tt1.tv_nsec)*_BILLIONTH; 
+	    cout << endl << "detecting time: " << lapse << endl;
+
             cout << "Number of detections: "<< rects.size() << endl;
 
             // Put the image and detections into the window.
