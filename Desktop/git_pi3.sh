@@ -65,6 +65,8 @@ git add /home/pi/Downloads/CppMT/main.cpp
 git add /home/pi/Downloads/CppMT/CMT.cpp
 git add /home/pi/Downloads/CppMT/CMT.h
 
+git add /home/pi/Downloads/QPULib/Tests/CMakeLists.txt
+
 
 
 # commit and push to github
