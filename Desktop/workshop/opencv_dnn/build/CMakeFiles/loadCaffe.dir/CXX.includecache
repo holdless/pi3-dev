@@ -15,6 +15,8 @@ opencv2/imgproc.hpp
 -
 opencv2/highgui.hpp
 -
+opencv2/core/ocl.hpp
+-
 fstream
 -
 iostream
@@ -241,6 +243,10 @@ opencv2/core/saturate.hpp
 /usr/local/include/opencv2/core/neon_utils.hpp
 opencv2/core/cvdef.h
 /usr/local/include/opencv2/core/opencv2/core/cvdef.h
+
+/usr/local/include/opencv2/core/ocl.hpp
+opencv2/core.hpp
+/usr/local/include/opencv2/core/opencv2/core.hpp
 
 /usr/local/include/opencv2/core/operations.hpp
 cstdio

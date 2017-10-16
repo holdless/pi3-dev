@@ -29,6 +29,8 @@ git add /home/pi/Desktop/_gcc/*
 git add /home/pi/Desktop/_install/*
 
 ### home/pi/Desktop/tango
+git add /home/pi/Desktop/tango/see/*
+git add /home/pi/Desktop/tango/talk/*
 git add /home/pi/Desktop/tango/dt/*
 git add /home/pi/Desktop/tango/inte/*
 git add /home/pi/Desktop/tango/remote/*.*

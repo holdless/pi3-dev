@@ -2,6 +2,7 @@
 #include <opencv2/dnn.hpp>
 #include <opencv2/imgproc.hpp>
 #include <opencv2/highgui.hpp>
+#include <opencv2/core/ocl.hpp>
 using namespace cv;
 using namespace cv::dnn;
 #include <fstream>
@@ -99,6 +100,8 @@ public:
 	}
 
 	void init(string modelTxt, string modelBin, const char* synsetPath) {
+		//ocl::setUseOpenCL(false);
+
 		cv::dnn::initModule();  //Required if OpenCV is built as static libs
 		_nameList = readClassNames(synsetPath);
 

@@ -1,0 +1,1 @@
+/home/pi/Desktop/tango/facerec/facedet/raspicam/_test/CMakeFiles/CMakeRaspicamCap.dir

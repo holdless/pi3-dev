@@ -23,6 +23,7 @@ CMakeFiles/loadCaffe.dir/loadCaffe.cpp.o: /usr/local/include/opencv2/core/mat.hp
 CMakeFiles/loadCaffe.dir/loadCaffe.cpp.o: /usr/local/include/opencv2/core/mat.inl.hpp
 CMakeFiles/loadCaffe.dir/loadCaffe.cpp.o: /usr/local/include/opencv2/core/matx.hpp
 CMakeFiles/loadCaffe.dir/loadCaffe.cpp.o: /usr/local/include/opencv2/core/neon_utils.hpp
+CMakeFiles/loadCaffe.dir/loadCaffe.cpp.o: /usr/local/include/opencv2/core/ocl.hpp
 CMakeFiles/loadCaffe.dir/loadCaffe.cpp.o: /usr/local/include/opencv2/core/operations.hpp
 CMakeFiles/loadCaffe.dir/loadCaffe.cpp.o: /usr/local/include/opencv2/core/optim.hpp
 CMakeFiles/loadCaffe.dir/loadCaffe.cpp.o: /usr/local/include/opencv2/core/ovx.hpp

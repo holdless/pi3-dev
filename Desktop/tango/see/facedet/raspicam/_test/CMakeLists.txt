@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 2.8.3)
+project(CMakeRaspicamCap)
+find_package(OpenCV REQUIRED)
+find_package(raspicam)
+include_directories(${raspicam_INCLUDE_DIRS})
+set(LIBS &{LIBS} ${raspicam_LIBRARIES})
+add_executable(CMakeRaspicamCap raspicamCap.cpp)
+target_link_libraries(CMakeRaspicamCap ${OpenCV_LIBS})
